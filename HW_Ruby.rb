@@ -1,6 +1,6 @@
 def main 
 	ran_num = rand(1..50).to_i
- 	puts "Please Input number between 1-50 or 'hint' or 'secret'"
+	puts "Please Input number between 1-50 or 'hint' or 'secret'"
 	secret_number(ran_num)
 end
 
