@@ -1,6 +1,6 @@
 def main 
 	ran_num = rand(1..50).to_i
-  puts "Please Input number between 1-50 or 'hint' or 'secret'"
+ 	puts "Please Input number between 1-50 or 'hint' or 'secret'"
 	secret_number(ran_num)
 end
 
@@ -19,10 +19,10 @@ def secret_number(ran_num)
 			user_input = user_input.to_i
 			if answer_arr.include? (user_input)
 				puts "Your answer is duplicate"
-        next
+        		next
 			elsif user_input < 1 or user_input > 50
 				puts "Please Input number between 1-50 or 'hint' or 'secret'"
-        next
+        		next
 			elsif user_input > ran_num
 				puts "Your answer is upper than secret number"
 			elsif user_input < ran_num
